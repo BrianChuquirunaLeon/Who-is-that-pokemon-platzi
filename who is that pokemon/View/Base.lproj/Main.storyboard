@@ -144,7 +144,7 @@
         <scene sceneID="rIj-8a-Kaa">
             <objects>
                 <viewController id="For-mf-rOd" customClass="ResultsViewController" customModule="who_is_that_pokemon" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Lsw-wP-l0m">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Lsw-wP-l0m">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -188,6 +188,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Jugar de nuevo">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="21"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playAgainPressed:" destination="For-mf-rOd" eventType="touchUpInside" id="tEL-0u-Tz8"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -207,7 +210,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="Oj2-6v-hZC"/>
                     <connections>
-                        <outlet property="pokemonLabel" destination="bbB-gi-cHs" id="Mj5-qa-28y"/>
+                        <outlet property="pokemonImage" destination="9Ig-zH-xU7" id="4HQ-c2-VXY"/>
+                        <outlet property="pokemonLabel" destination="bbB-gi-cHs" id="RS9-Iy-LX1"/>
+                        <outlet property="scoreLabel" destination="zmE-qW-a4E" id="WFX-7S-QtO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jaT-i2-BTY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
